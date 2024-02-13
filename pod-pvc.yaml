@@ -8,10 +8,9 @@ metadata:
 spec:
   containers:
   - name: nginx
-    image: nginx
+    image: nginx:latest
     volumeMounts:
-    - name: my-volume
-      mountPath: /app
+      mountPath: /usr/share/nginx/html/
   volumes:
   - name: my-volume
     persistentVolumeClaim:
